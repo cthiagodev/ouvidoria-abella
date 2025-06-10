@@ -1,0 +1,11 @@
+CREATE DATABASE ouvidoria;
+USE ouvidoria;
+
+CREATE TABLE manifestacoes (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    tipo VARCHAR(50) NOT NULL,
+    titulo VARCHAR(100) NOT NULL,
+    descricao TEXT NOT NULL,
+    autor VARCHAR(100) NOT NULL,
+    data_registro DATETIME DEFAULT CURRENT_TIMESTAMP
+);
